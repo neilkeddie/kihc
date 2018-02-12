@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Work Sans:100,200,300,400,500,600,700');
+
+/*-----------------------Colors---*/
+
+
+/*------------------------Body---*/
+
+body {
+ background-image: url(http://planeticerink.townsquareinteractive.com/files/2013/09/123076-1920x1200.jpg);   
+ background-repeat: no-repeat;
+ 
+}
+
+
+/*-------------------Logo-----*/
+
+.logo {
+    background-color: #14326a;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.logo h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 10px;
+    padding-right: 10px;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.nav li a {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    width: 100%;
+    word-break: keep-all;
+}
+
+.menuitem {
+    background-color: #eef94a;
+    color: #14326a;
+    padding: 0;
+    text-align: center;
+}
+
+
+/*-----------------------------Section Information----*/
+
+.information .team-info {
+    background-color: #ffffff;
+    height: 300px;
+    z-index: -2;
+}
+
+.information .sponsor-information {
+    background-color: #ffffff;
+    height: 300px;
+    z-index: -2;
+}
+
+.club-information,
+.sponsor-information {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: top,left;
+    color: #5388da;
+}
+
+/*-------------------------------Footer-----*/
+
+.social-heading {
+    color: #14326a;
+    text-align: right;
+}
+
+.social-links {
+    text-align: right;
+    
+}
+
+.social-links li a i {
+    height: 32px;
+    width: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    background-color: #5388da;
+    font-size: 12px;
+    line-height: 7px;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
