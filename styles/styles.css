@@ -7,7 +7,7 @@
 
 body {
  background-image: url(http://planeticerink.townsquareinteractive.com/files/2013/09/123076-1920x1200.jpg);   
- background-repeat: no-repeat;
+ background-repeat: repeat-y;
  
 }
 
@@ -63,7 +63,7 @@ body {
 
 .information .team-info, .information .sponsor-information  {
     background-color: #ffffff;
-    height: 380px;
+    height: 450px;
     top: 10px;
 }
 
@@ -71,10 +71,30 @@ body {
 .club-information,
 .sponsor-information {
     font-family: "Work Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 30px;
-    text-align: top,left;
+    text-align: center;
     color: #5388da;
+    border: 2px solid;
+}
+
+.fixtures{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.team-info {
+    overflow: auto;
+}
+
+.club-information a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.club-information p {
+    font-size: 15px;
 }
 
 /*-------------------------------Footer-----*/
@@ -106,4 +126,19 @@ body {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+}
+
+
+/*-------------------------------Media Queries----*/
+
+@media (max-width: 991px) {
+    .information .sponsor-information {
+        height: 200px;
+        margin-top: 20px;
+        
+    }
+    .sponsor-information .sponsor-heading img {
+        height: 75px;
+        width: 100px;
+    }
 }
