@@ -15,7 +15,7 @@ body {
 /*-------------------Logo-----*/
 
 .logo {
-    background-color: #14326a;
+    background-color: rgba(20,50,106, 0.4);
     background-repeat: no-repeat;
     text-align: center;
     padding: 10px;
@@ -42,6 +42,7 @@ body {
     font-size: 12px;
     width: 100%;
     word-break: keep-all;
+    border: 2px solid;
 }
 
 .menuitem {
@@ -49,22 +50,23 @@ body {
     color: #14326a;
     padding: 0;
     text-align: center;
+    top: 5px;
+}
+
+.nav li a:hover {
+    background-color: #14326a;
+    color: #eef94a;
 }
 
 
 /*-----------------------------Section Information----*/
 
-.information .team-info {
+.information .team-info, .information .sponsor-information  {
     background-color: #ffffff;
-    height: 300px;
-    z-index: -2;
+    height: 380px;
+    top: 10px;
 }
 
-.information .sponsor-information {
-    background-color: #ffffff;
-    height: 300px;
-    z-index: -2;
-}
 
 .club-information,
 .sponsor-information {
@@ -77,6 +79,9 @@ body {
 
 /*-------------------------------Footer-----*/
 
+.about, .download, .social {
+    top: 5px;
+}
 .social-heading {
     color: #14326a;
     text-align: right;
