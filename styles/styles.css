@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     padding: 10px;
+    border: 2px solid;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -61,6 +62,8 @@ body {
 
 /*-----------------------------Section Information----*/
 
+
+
 .information .team-info, .information .sponsor-information  {
     background-color: #ffffff;
     height: 450px;
@@ -68,13 +71,13 @@ body {
 }
 
 
-.club-information,
+.team-info,
 .sponsor-information {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     font-size: 30px;
     text-align: center;
-    color: #5388da;
+    color: #14326a;
     border: 2px solid;
 }
 
@@ -85,7 +88,19 @@ body {
 }
 
 .team-info {
+    background-image: url(/images/kihc-zoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
     overflow: auto;
+    position: relative;
+}
+
+.team-info .club-information {
+    position: absolute;
+    color: #14326a;
+    border: 2px solid;
+    
 }
 
 .club-information a {
@@ -100,7 +115,12 @@ body {
 /*-------------------------------Footer-----*/
 
 .about, .download, .social {
-    top: 5px;
+    top: 10px;
+    padding: 0;
+    margin-top: 5px;
+    color: #14326a;
+    border-top: 2px solid;
+    
 }
 .social-heading {
     color: #14326a;
@@ -132,6 +152,15 @@ body {
 /*-------------------------------Media Queries----*/
 
 @media (max-width: 991px) {
+    .logo h1 {
+        font-size:30px;
+    }
+    
+    .logo h1 img {
+        width: 100px;
+        height: 52px;
+    }
+    
     .information .sponsor-information {
         height: 200px;
         margin-top: 20px;
@@ -140,5 +169,11 @@ body {
     .sponsor-information .sponsor-heading img {
         height: 75px;
         width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo h1 img {
+        display: none;
     }
 }
