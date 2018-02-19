@@ -113,9 +113,92 @@ body {
     width: 100px;
 }
 
+.club-information .whoswho .committee {
+    display: inline-block;
+}
+
+.information .club-information .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.information .club-information .modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.information .club-information .modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.fixtures #eagles, .fixtures #redskins, .fixtures #chiefs, .fixtures #flames, .fixtures #falcons, .fixtures #kestrels {
+    display: none;
+}
+
+.fixtures #eagles:target, .fixtures #redskins:target, .fixtures #chiefs:target, .fixtures #flames:target, .fixtures #falcons:target, .fixtures #kestrels:target  {
+    display: inline;
+}
+
+
+.gallery {
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: left;
+}
+
+.navigation li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  clear: both;
+}
+
+.navigation li a img {
+  display: block;
+  border: none;
+}
+
+.navigation li a {
+  display: block;
+}
+
+.full-picture {
+  width: 500px;
+  height: 355px;
+  overflow: hidden;
+  float: left;
+}
 /*-------------------------------Footer-----*/
 
-.about, .download, .social {
+.about, .download, .social, .contact {
     top: 10px;
     padding: 0;
     margin-top: 5px;
@@ -156,16 +239,16 @@ body {
         height: 50px;
         width: 66px;
     }
+    
+        .logo h1 img {
+        width: 100px;
+        height: 52px;
+    }
 }
 
 @media (max-width: 991px) {
-    .logo h1 {
+    .logo {
         font-size:30px;
-    }
-    
-    .logo h1 img {
-        width: 100px;
-        height: 52px;
     }
     
     .information .sponsor-information {
@@ -176,8 +259,12 @@ body {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 801px) {
     .logo h1 img {
         display: none;
+    }
+    
+    .information .club-information .fb-page {
+        width: 100%;
     }
 }
