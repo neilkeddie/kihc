@@ -4,12 +4,11 @@
 
 body {
  background-image: url(http://planeticerink.townsquareinteractive.com/files/2013/09/123076-1920x1200.jpg);   
- background-repeat: repeat-y;
- 
+ background-attachment: fixed;
 }
 
 
-/*-------------------Logo-----*/
+/*-------------------Logo & Navigation-----*/
 
 .logo {
     background-color: rgba(20,50,106, 0.6);
@@ -39,8 +38,12 @@ body {
     font-weight: 500;
     font-size: 12px;
     width: 100%;
-    word-break: keep-all;
     border: 2px solid;
+}
+
+.nav li a:hover {
+    background-color: #14326a;
+    color: #eef94a;
 }
 
 .menuitem {
@@ -51,22 +54,19 @@ body {
     top: 5px;
 }
 
-.nav li a:hover {
-    background-color: #14326a;
-    color: #eef94a;
-}
+/*-----------------------------Main Section Information----*/
 
-
-/*-----------------------------Section Information----*/
-
-
-
-.information .team-info, .information .sponsor-information  {
+.information .team-info {
     background-color: #ffffff;
-    height: 400px;
+    height: 500px;
     top: 10px;
 }
 
+.information .sponsor-information {
+        background-color: #ffffff;
+        height: 200px;
+        margin-top: 20px;
+}
 
 .team-info,
 .sponsor-information {
@@ -76,27 +76,105 @@ body {
     text-align: center;
     color: #14326a;
     border: 2px solid;
-}
-
-.fixtures{
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+    overflow: auto;
 }
 
 .team-info {
     background-image: url(/images/kihc-zoom-clear.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: auto;
-    position: relative;
 }
 
 .team-info .club-information {
     position: absolute;
     color: #14326a;
     border: 2px solid;
-    
+
+}
+
+
+/*--------------------------------Slide Show--*/
+
+.home {
+    position: relative;
+    text-align: left;
+}
+
+.home img {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+}
+
+.home .images {
+    margin: 10px auto;
+}
+
+@-webkit-keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    12.5% {
+        opacity:1;
+    }
+    16.5% {
+        opacity:0;
+    }
+    96% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    12.5% {
+        opacity:1;
+    }
+    16.5% {
+        opacity:0;
+    }
+    96% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.home img:nth-child(8) {
+    -webkit-animation: xfade 64s 0s infinite;
+    animation: xfade 64s 0s infinite;
+}
+.home img:nth-child(7) {
+    -webkit-animation: xfade 64s 8s infinite;
+    animation: xfade 64s 8s infinite;
+}
+.home img:nth-child(6) {
+    -webkit-animation: xfade 64s 16s infinite;
+    animation: xfade 64s 16s infinite;
+}
+.home img:nth-child(5) {
+    -webkit-animation: xfade 64s 24s infinite;
+    animation: xfade 64s 24s infinite;
+}
+.home img:nth-child(4) {
+    -webkit-animation: xfade 64s 32s infinite;
+    animation: xfade 64s 32s infinite;
+}
+.home img:nth-child(3) {
+    -webkit-animation: xfade 64s 40s infinite;
+    animation: xfade 64s 40s infinite;
+}
+.home img:nth-child(2) {
+    -webkit-animation: xfade 64s 48s infinite;
+    animation: xfade 64s 48s infinite;
+}
+.home img:nth-child(1) {
+    -webkit-animation: xfade 64s 56s infinite;
+    animation: xfade 64s 56s infinite;
 }
 
 .club-information a {
@@ -107,15 +185,33 @@ body {
 .club-information p {
     font-size: 15px;
 }
+/*----------------------------------------Sponsors---*/
 
-.sponsor-information .sponsor-heading img {
-    height: 75px;
-    width: 100px;
+
+.sponsor-heading {
+    position: relative;
 }
+
+.sponsor-heading h3 {
+    border-bottom: 2px solid;
+}
+
+.sponsor-heading img {
+    height: 50px;
+    width: 66px;
+}
+
+.sponsor-heading .sponsors {
+    overflow: auto;
+}
+
+/*-------------------------------------Whos who----*/
 
 .club-information .whoswho .committee {
     display: inline-block;
 }
+
+/*-----------------------------------Teams - Modals-----*/
 
 .information .club-information .modalDialog {
 	position: fixed;
@@ -125,7 +221,7 @@ body {
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.8);
-	z-index: 99999;
+	z-index: 2;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
@@ -139,7 +235,7 @@ body {
 }
 
 .information .club-information .modalDialog > div {
-	width: 400px;
+	width: 80%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -150,6 +246,14 @@ body {
 	background: -o-linear-gradient(#fff, #999);
 }
 
+/*--------------------------------------------Fixtures------*/
+
+.fixtures {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
 .fixtures #eagles, .fixtures #redskins, .fixtures #chiefs, .fixtures #flames, .fixtures #falcons, .fixtures #kestrels {
     display: none;
 }
@@ -158,43 +262,10 @@ body {
     display: inline;
 }
 
+/*-----------------------------------------Game Action---*/
 
-.gallery {
-  width: 95%;
-  overflow: hidden;
-  position: relative;
-  margin-left: 40px;
-  z-index: 1;
-}
-
-.navigation {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  float: left;
-}
-
-.navigation li {
-  padding: 0;
-  margin: 0;
-  float: left;
-  clear: both;
-}
-
-.navigation li a img {
-  display: block;
-  border: none;
-}
-
-.navigation li a {
-  display: block;
-}
-
-.full-picture {
-  width: 500px;
-  height: 355px;
-  overflow: hidden;
-  float: left;
+.game-action  .game{
+    display: inline-block;
 }
 /*-------------------------------Footer-----*/
 
@@ -235,12 +306,12 @@ body {
 
 /*-------------------------------Media Queries----*/
 @media (max-width: 1245px) {
-        .sponsor-information .sponsor-heading img {
+    .sponsor-information .sponsor-heading img {
         height: 50px;
         width: 66px;
     }
     
-        .logo h1 img {
+    .logo h1 img {
         width: 100px;
         height: 52px;
     }
@@ -254,17 +325,13 @@ body {
     .information .sponsor-information {
         height: 200px;
         margin-top: 20px;
-        
     }
-
 }
 
 @media (max-width: 801px) {
     .logo h1 img {
         display: none;
     }
-    
-    .information .club-information .fb-page {
-        width: 100%;
-    }
 }
+
+
