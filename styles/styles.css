@@ -83,12 +83,14 @@ body {
 }
 
 .team-info .club-information {
-
     color: #14326a;
     border: 2px solid;
-
 }
 
+.sponsors table {
+    padding: 2px;
+    width: 100%;
+}
 
 /*--------------------------------Carousel--*/
 
