@@ -7,14 +7,15 @@ videos from different games and a selection of related links.
 This will also provide users the ability to contact the ice hockey club and committee members as well as allowing links to social media content. 
 Downloadable content for the clubs code of conduct will be included.
 
-The project employs the Bootstrap framework v3.3.7, Font Awesome to showcase the same font used in the monthly magazine the club produces.
+The project employs the Bootstrap framework v3.3.7, Font Awesome to showcase the same font used in the monthly magazine the club produces and a
+bootstrap javascript library to run the carousel on the home page.
 
 Using HTML5 and CSS3.
 
 
 --------Used Content--------
 
-Front page xfade between pictures - I changed this to use the photos I have created and to decrease the length of time between picture fade in and out.
+Bootstrap js on the home page to skip through the teams and general details.
 
 Modal used to showcase each of the teams and the honours they have acquired over recent seasons - this was changed to show a percentage of the screen
 on display rather than a specific width.
@@ -31,4 +32,4 @@ Test site on mulitple different browsers.
 
 -----Deployment------
 
-Deployed via Github Pages
+Deployed via Github/Github Pages
