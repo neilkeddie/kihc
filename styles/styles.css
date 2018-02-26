@@ -56,10 +56,13 @@ body {
 
 /*-----------------------------Main Section Information----*/
 
-.information .team-info {
-    background-color: #ffffff;
+.team-info {
+    background-color: #fff;
     height: 500px;
     top: 10px;
+    background-image: url(/images/kihc-zoom-clear.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .information .sponsor-information {
@@ -79,102 +82,29 @@ body {
     overflow: auto;
 }
 
-.team-info {
-    background-image: url(/images/kihc-zoom-clear.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .team-info .club-information {
-    position: absolute;
+
     color: #14326a;
     border: 2px solid;
 
 }
 
 
-/*--------------------------------Slide Show--*/
+/*--------------------------------Carousel--*/
 
-.home {
-    position: relative;
-    text-align: left;
-}
-
-.home img {
-    position: absolute;
-    width: 90%;
-    height: 95%;
-}
-
-.home .images {
+.home .carousel {
     margin: 10px auto;
 }
 
-@-webkit-keyframes xfade {
-    0% {
-        opacity: 1;
-    }
-    12.5% {
-        opacity:1;
-    }
-    16.5% {
-        opacity:0;
-    }
-    96% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
+.home .carousel-inner .item img {
+    height: 480px;
+    width: 100%;
 }
-@keyframes xfade {
-    0% {
-        opacity: 1;
-    }
-    12.5% {
-        opacity:1;
-    }
-    16.5% {
-        opacity:0;
-    }
-    96% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-.home img:nth-child(8) {
-    -webkit-animation: xfade 64s 0s infinite;
-    animation: xfade 64s 0s infinite;
-}
-.home img:nth-child(7) {
-    -webkit-animation: xfade 64s 8s infinite;
-    animation: xfade 64s 8s infinite;
-}
-.home img:nth-child(6) {
-    -webkit-animation: xfade 64s 16s infinite;
-    animation: xfade 64s 16s infinite;
-}
-.home img:nth-child(5) {
-    -webkit-animation: xfade 64s 24s infinite;
-    animation: xfade 64s 24s infinite;
-}
-.home img:nth-child(4) {
-    -webkit-animation: xfade 64s 32s infinite;
-    animation: xfade 64s 32s infinite;
-}
-.home img:nth-child(3) {
-    -webkit-animation: xfade 64s 40s infinite;
-    animation: xfade 64s 40s infinite;
-}
-.home img:nth-child(2) {
-    -webkit-animation: xfade 64s 48s infinite;
-    animation: xfade 64s 48s infinite;
-}
-.home img:nth-child(1) {
-    -webkit-animation: xfade 64s 56s infinite;
-    animation: xfade 64s 56s infinite;
+
+.home .carousel-caption {
+    background-color: #14326a;
+    opacity: 0.5;
+    color: #fff;
 }
 
 .club-information a {

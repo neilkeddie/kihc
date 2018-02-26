@@ -27,6 +27,7 @@ Test all links work as expected.
 Test all pages react responsively on different screen resolution.
 Check download of files is performed.
 Test external links open in seperate window.
+Test site on mulitple different browsers.
 
 -----Deployment------
 

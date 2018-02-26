@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>KIHC</title>
 </head>
 <body>
@@ -49,17 +51,96 @@
     <section class="container-fluid">
             <div class="row col-md-10 col-md-offset-1 information">
                 <div class="col-xs-12 team-info club-information home">
-                    <div class="images">
-                            <img src="images/Puck.png" />
-                            <img src="images/Kubz.png" />
-                            <img src="images/Eagles.png" />
-                            <img src="images/Redskins.png" />
-                            <img src="images/Chiefs.png" />
-                            <img src="images/Flames.png" />
-                            <img src="images/Falcons.png" />
-                            <img src="images/Kestrels.png" />
+                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                              <li data-target="#myCarousel" data-slide-to="4"></li>
+                              <li data-target="#myCarousel" data-slide-to="5"></li>
+                              <li data-target="#myCarousel" data-slide-to="6"></li>
+                              <li data-target="#myCarousel" data-slide-to="7"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="/images/Puck.png" alt="Learn to Play">
+                            <div class="carousel-caption">
+                              <h3>Learn to Play</h3>
+                              <p>Come along Saturdays 12:30</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                        <img src="images/Kubz.png" alt="Kubz">
+                            <div class="carousel-caption">
+                              <h3>Kirkcaldy Kubz</h3>
+                              <p>Our Learn to Play team</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                        <img src="images/Eagles.png" alt="Eagles">
+                            <div class="carousel-caption">
+                              <h3>Fife Eagles</h3>
+                              <p>Our Under 10 Team</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                        <img src="images/Kestrels.png" alt="Kestrels">
+                            <div class="carousel-caption">
+                              <h3>Kirkcaldy Kestrels</h3>
+                              <p>Our Scottish National League Team</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                        <img src="images/Chiefs.png" alt="Chiefs">
+                            <div class="carousel-caption">
+                              <h3>Kirkcaldy Chiefs</h3>
+                              <p>Our Under 14 Team</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                        <img src="images/Redskins.png" alt="Redskins">
+                            <div class="carousel-caption">
+                              <h3>Kirkcaldy Redskins</h3>
+                              <p>Our Under 12 Team</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                        <img src="images/Flames.png" alt="Flames">
+                            <div class="carousel-caption">
+                              <h3>Fife Flames</h3>
+                              <p>Our Under 16 Team</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                        <img src="images/Falcons.png" alt="Falcons">
+                            <div class="carousel-caption">
+                              <h3>Fife Falcons</h3>
+                              <p>Our Under 20 Team</p>
+                            </div>
+                        </div>
                     </div>
-                </div>  
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
                 <div class="col-xs-12 sponsor-information">
                     <div class="sponsor-heading">
                         <h3>Commercial Partners</h3>
