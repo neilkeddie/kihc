@@ -141,6 +141,10 @@ body {
 
 /*-----------------------------------Teams - Modals-----*/
 
+.list-group li {
+    list-style: none;
+}
+
 .information .club-information .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
