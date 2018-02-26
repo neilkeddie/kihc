@@ -101,10 +101,8 @@ body {
     width: 100%;
 }
 
-.home .carousel-caption {
-    background-color: #14326a;
-    opacity: 0.5;
-    color: #fff;
+.home .carousel-indicators li{
+    background-color: rgba(20,50,106, 1);
 }
 
 .club-information a {
