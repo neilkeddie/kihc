@@ -60,7 +60,7 @@ body {
     background-color: #fff;
     height: 500px;
     top: 10px;
-    background-image: url(/images/kihc-zoom-clear.png);
+    background-image: url('/images/kihc-zoom-clear.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
