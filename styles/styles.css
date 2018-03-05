@@ -2,13 +2,30 @@
 
 /*------------------------Body---*/
 
-body {
- background-image: url(http://planeticerink.townsquareinteractive.com/files/2013/09/123076-1920x1200.jpg);   
- background-attachment: fixed;
-}
 
 
 /*-------------------Logo & Navigation-----*/
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a  {
+    color: rgba(20,50,106, 1);
+}
+
+.navbar-default .navbar-nav>li>a {
+    border: none;
+}
+
+ .navbar-header{
+     height: 80px;
+}
+.navbar-default .links {
+    padding-right: 0;
+}
+
 
 .logo {
     background-color: rgba(20,50,106, 0.6);
@@ -94,12 +111,75 @@ body {
 
 /*--------------------------------Carousel--*/
 
-.home .carousel {
-    margin: 10px auto;
+.carousel-inner {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
 }
 
-.home .carousel-inner .item img {
-    height: 480px;
+.carousel-inner .image1 {
+    background-image: url('../images/Flames.png'), linear-gradient(to right, rgba(0,0,0,0.1), rgba(1,0,0,1));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image2 {
+    background-image: url('../images/Falcons.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image3 {
+    background-image: url('../images/Redskins.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image4 {
+    background-image: url('../images/Chiefs.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image5 {
+    background-image: url('../images/Kubz.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image6 {
+    background-image: url('../images/Eagles.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image7 {
+    background-image: url('../images/Kestrels.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image8 {
+    background-image: url('../images/Puck.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
 }
 
@@ -141,65 +221,35 @@ body {
     display: inline-block;
 }
 
-/*-----------------------------------Teams - Modals-----*/
+/*-----------------------------------Teams-----*/
 
-.list-group li {
-    list-style: none;
-}
-
-.information .club-information .modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 2;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-
-.information .club-information .modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-
-.information .club-information .modalDialog > div {
-	width: 80%;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-
-/*--------------------------------------------Fixtures------*/
-
-.fixtures {
+.team-heading {
+    text-align: center;
+    padding-top: 30px;
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
 
-.fixtures #eagles, .fixtures #redskins, .fixtures #chiefs, .fixtures #flames, .fixtures #falcons, .fixtures #kestrels {
+#kubz, #eagles, #redskins, #chiefs, #flames, #falcons, #kestrels {
     display: none;
 }
 
-.fixtures #eagles:target, .fixtures #redskins:target, .fixtures #chiefs:target, .fixtures #flames:target, .fixtures #falcons:target, .fixtures #kestrels:target  {
+#kubz:target, #eagles:target, #redskins:target, #chiefs:target, #flames:target, #falcons:target, #kestrels:target  {
     display: inline;
 }
 
 /*-----------------------------------------Game Action---*/
 
-.game-action  .game{
+.game-action  {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.game{
     display: inline-block;
+    
 }
 /*-------------------------------Footer-----*/
 
