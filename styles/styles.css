@@ -6,7 +6,7 @@
     padding-right: 0;
     padding-left: 0;
     width: 100%;
-    margin: 0px 0px 5px 0px;
+    margin: 0px;
     overflow: hidden;
 }
 
@@ -240,17 +240,29 @@ body {
     text-align: center;
 }
 
-.game{
-    display: inline-block;
+.game-box {
+    padding: 40px 10px;
+    background-color: #fafafa;
+    color: #14326a;
+    -moz-box-shadow: 0 0 5px #000033;
+    -webkit-box-shadow: 0 0 5px #000033;
+    box-shadow: 0 0 5px #000033;
     
 }
+
+.game{
+    display: inline-block;
+}
+
+
 /*-------------------------------Footer-----*/
 
 .footer-section{
     background-color: #14326a;
     text-align: center;
     top: 10px;
-    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 5px;
     color: #fff;
     border-top: 0.5px solid;
