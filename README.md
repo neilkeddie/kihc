@@ -15,18 +15,15 @@ Using HTML5 and CSS3.
 
 --------Used Content--------
 
-Bootstrap js on the home page to skip through the teams and general details.
+Bootstrap features used for the menu and slideshow features
 
-Modal used to showcase each of the teams and the honours they have acquired over recent seasons - this was changed to show a percentage of the screen
-on display rather than a specific width.
 
 --------Testing and Deployment--------
 
 ----Tests performed-----
 
 Test all links work as expected.
-Test all pages react responsively on different screen resolution.
-Check download of files is performed.
+Test pages react responsively on different screen resolution.
 Test external links open in seperate window.
 Test site on mulitple different browsers.
 
