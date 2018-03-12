@@ -3,53 +3,55 @@
 /*------------------------Body---*/
 
 .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
 }
 
 body {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 /*-------------------Navigation-----*/
 
 .navbar-default {
-    background-color: #fafafa;
-    border-color: #fafafa;
+  background-color: #fafafa;
+  border-color: #fafafa;
 }
 
 .navbar-default .navbar-nav>li>a  {
-    color: rgba(20,50,106, 1);
+  color: rgba(20,50,106, 1);
 }
 
 .navbar-default .navbar-nav>li>a {
-    border: none;
+  border: none;
 }
 
 .navbar-header{
-     height: 80px;
+  height: 80px;
 }
 
 .navbar-brand p {
-    color: rgba(20,50,106, 1);
+  color: rgba(20,50,106, 1);
 }
 
 .navbar-brand p:after {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: -35px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -35px;
 }
 
 .navbar-default .links {
-    padding-right: 0;
+  padding-right: 0;
+}
+.nav>li>a {
+  padding: 5px 8px;
 }
 
 .home {
-    padding-bottom: 30px;
-    position: relative;
+  position: relative;
 }
 
 
@@ -57,233 +59,205 @@ body {
 
 
 .heading {
-    text-align: center;
-    padding-top: 30px;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    background-color: #fafafa;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #fafafa;
+  position: relative;
 }
 
 .heading .area {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .tagline {
-    font-size: 45px;
-    font-weight: 400;
-    margin-right: -180px;
-    margin-top: 100px;
+  font-size: 45px;
+  font-weight: 400;
+  margin-right: -180px;
+  margin-top: 100px;
 }
 
 .tagline p {
-    margin-right: -240px;
+  margin-right: -240px;
 }
 
 .sub-tag {
-    font-size: 35px;
-    font-weight: 300;
-    width: 400px;
-    margin-top: 45px;
+  font-size: 35px;
+  font-weight: 300;
+  width: 400px;
+  margin-top: 45px;
 }
 
 .tagline, .sub-tag{
-    font-family: "Work Sans", sans-serif;
-    color: #000066;
-    position: relative;
-    z-index: 100;
+  font-family: "Work Sans", sans-serif;
+  color: #000066;
+  position: relative;
+  z-index: 100;
 }
 
 
 /*--------------------------------Carousel--*/
 
 .carousel-inner {
-    margin: 0;
-    padding: 0;
-    height: 600px;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  width: 100%;
 }
 
-.carousel-inner .image1 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%), url('../images/Flames.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.carousel-inner .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  height: 100%;
 }
-.carousel-inner .image2 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Falcons.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+
+.image1 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%), url('../images/Flames.png');
 }
-.carousel-inner .image3 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%), url('../images/Redskins.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.image2 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Falcons.png');
 }
-.carousel-inner .image4 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Chiefs.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.image3 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%), url('../images/Redskins.png');
 }
-.carousel-inner .image5 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Kubz.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.image4 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Chiefs.png');
 }
-.carousel-inner .image6 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Eagles.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.image5 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Kubz.png');
 }
-.carousel-inner .image7 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Kestrels.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.image6 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Eagles.png');
 }
-.carousel-inner .image8 {
-    background: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Puck.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.image7 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Kestrels.png');
+}
+.image8 {
+  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Puck.png');
 }
 
 .home .carousel-indicators li{
-    background-color: rgba(20,50,106, 1);
+  background-color: rgba(20,50,106, 1);
 }
 
 /*----------------------------------------Sponsors---*/
 
-.heading {
-    position: relative;
-    padding-top: 10px;
+.sponsors img {
+  height: 50px;
+  width: 66px;
 }
 
-.sponsors img {
-    height: 50px;
-    width: 66px;
+.sponsors {
+  padding-bottom: 20px;
 }
 
 
 /*-----------------------------------Teams-----*/
 
 .team-heading .area {
-    background-color: #14326a;
-    color: #fff;
+  background-color: #14326a;
+  color: #fff;
+}
+
+.area {
+  margin-top: 0;
 }
 
 .teams a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .team-info {
-    min-height: 400px;
+  min-height: 400px;
 }
 .eagles img{
-    padding-top: 20px;
-    width: 100%;
+  padding-top: 20px;
+  width: 100%;
 }
 
 #kubz, #eagles, #redskins, #chiefs, #flames, #falcons, #kestrels {
-    display: none;
+  display: none;
 }
 
 #kubz:target, #eagles:target, #redskins:target, #chiefs:target, #flames:target, #falcons:target, #kestrels:target  {
-    display: inline;
+  display: inline;
 }
 
 .return {
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #14326a;
-    text-decoration: none;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #14326a;
+  text-decoration: none;
 }
 
 /*-----------------------------------------Whos Who---*/
 
 .committee {
-    background-color: #ffff66;
-    padding-bottom: 30px;
+  color: #fafafa;
+  background-color: #14326a;
+  padding-bottom: 30px;
+}
+
+.committee a i {
+    color: #fafafa;
 }
 
 /*-----------------------------------------Game Action---*/
 
 .game-action  {
-    background-color: #14326a;
-    color: #fff;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
+  background-color: #14326a;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .game-box {
-    padding: 40px 10px;
-    background-color: #fafafa;
-    color: #14326a;
-    -moz-box-shadow: 0 0 5px #000033;
-    -webkit-box-shadow: 0 0 5px #000033;
-    box-shadow: 0 0 5px #000033;
+  padding: 10px 10px;
+  background-color: #fafafa;
+  color: #14326a;
+  -moz-box-shadow: 0 0 5px #000033;
+  -webkit-box-shadow: 0 0 5px #000033;
+  box-shadow: 0 0 5px #000033;
     
 }
 
 .game{
-    display: inline-block;
+  display: inline-block;
 }
 
 
 /*-------------------------------Footer-----*/
 
 .footer-section{
-    background-color: #14326a;
-    text-align: center;
-    top: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 5px;
-    color: #fff;
-    border-top: 0.5px solid;
+  background-color: #14326a;
+  text-align: center;
+  top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 5px;
+  color: #fff;
+  border-top: 0.5px solid;
 }
 .download a i {
-    color: #fff;
+  color: #fff;
 }
 .social-links li a i {
-    height: 32px;
-    width: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    background-color: #fff;
-    font-size: 12px;
-    line-height: 7px;
-    color: #14326a;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+  height: 32px;
+  width: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 7px;
+  color: #14326a;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
-
-
