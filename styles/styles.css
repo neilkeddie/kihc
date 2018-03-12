@@ -29,6 +29,18 @@ body {
   border: none;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: #14326a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #14326a;
+}
+
+.container-fluid>.navbar-collapse {
+    margin-left: 0px;
+}
+
 .navbar-header{
   height: 80px;
 }
