@@ -11,7 +11,7 @@
     <title>KIHC</title>
 </head>
 <body>
-<header id="Home" class="container-fluid">
+<header id="Home" class="container-fluid page-section">
         <nav class="navbar navbar-default">
             <div class="container-fluid links">
                  <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,7 +30,6 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#Teams">Teams</a></li>
                         <li><a href="#Game-Action">Recent Action</a></li>
-                        <li><a href="#HockeyUK">Hockey UK</a></li>
                         <li><a href="#Whoswho">Who's Who</a></li>
                         <li><a href="#Sponsors">Commercial Partners</a></li>
                         <li><a href="#Links">Social</a></li>
@@ -39,21 +38,21 @@
             </div><!-- /.container-fluid -->
         </nav>
     </header>
-<section class="container-fluid main"> 
-    <div id="Home" class="container-fluid">
+<section class="container-fluid main page-section"> 
+    <div id="Home" class="container-fluid page-section">
         <div class="row home">
             <div class="col-xs-12 col-sm-12 col-md-12">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                              <li data-target="#myCarousel" data-slide-to="1"></li>
-                              <li data-target="#myCarousel" data-slide-to="2"></li>
-                              <li data-target="#myCarousel" data-slide-to="3"></li>
-                              <li data-target="#myCarousel" data-slide-to="4"></li>
-                              <li data-target="#myCarousel" data-slide-to="5"></li>
-                              <li data-target="#myCarousel" data-slide-to="6"></li>
-                              <li data-target="#myCarousel" data-slide-to="7"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="1"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="2"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="3"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="4"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="5"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="6"></li>
+                              <li class="carousel-indicators-list" data-target="#myCarousel" data-slide-to="7"></li>
                         </ol>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
@@ -87,247 +86,283 @@
             </div>
         </div>
     </div>
-    <div id="Teams" class="container-fluid">
-        <div class="row heading team-heading">
-            <h2 class="area">Teams</h2>
-            <div class="col-xs-4 col-sm-4 col-md-2 teams">
-               <h3><a href="#kubz"> Kubz </a></h3> 
+    <div id="Teams" class="container-fluid page-section">
+        <div class="row heading team-heading area">
+            <h2>Teams</h2>
+        </div>
+        <div class="row heading team-section">
+            <div class="col-xs-6 col-sm-4 col-md-4">
+               <a class="team-anchor" href="#eagles" data-toggle="modal"><img class="team-logo" src="../images/teams/EAGLES IMAGE.png" /></a>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 teams">
-               <h3><a href="#eagles"> Eagles </a></h3> 
+            <div class="col-xs-6 col-sm-4 col-md-4">
+               <a class="team-anchor" href="#redskins" data-toggle="modal"><img class="team-logo" src="../images/teams/REDSKINS IMAGE.png" /></a> 
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 teams">
-               <h3><a href="#redskins"> Redskins </a></h3> 
+            <div class="col-xs-6 col-sm-4 col-md-4">
+               <a class="team-anchor" href="#chiefs" data-toggle="modal"><img class="team-logo" src="../images/teams/CHIEFS LOGO.png" /></a>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 teams">
-               <h3><a href="#chiefs"> Chiefs </a></h3> 
+            <div class="col-xs-6 col-sm-4 col-md-4">
+               <a class="team-anchor" href="#flames" data-toggle="modal"><img class="team-logo" src="../images/teams/FLAMES IMAGE.png" /></a>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 teams">
-               <h3><a href="#flames"> Flames </a></h3> 
+            <div class="col-xs-6 col-sm-4 col-md-4">
+               <a class="team-anchor" href="#falcons" data-toggle="modal"><img class="team-logo" src="../images/teams/FALCONS IMAGE.png" /></a> 
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 teams">
-               <h3><a href="#falcons"> Falcons </a></h3> 
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 teams">
-               <h3><a href="#kestrels"> Kestrels </a></h3> 
+            <div class="col-xs-6 col-sm-4 col-md-4">
+               <a class="team-anchor" href="#kestrels" data-toggle="modal"><img class="team-logo" src="../images/teams/KESTRELS LOGO.png" /></a> 
             </div>
         </div>
         <div class="container-fluid team-info">
-            <div id="kubz" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                    <div class="kubz">
-                    <img src="images/teams/KUBZS LOGO.png" />
+            <div id="kubz" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div  class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="kubz">
+                            <img src="../images/teams/KUBZS LOGO.png" />
+                            </div>
+                            <div class="fixtures">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">
-                </div>
+              </div>
             </div>
-            <div id="eagles" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                    <div>
-                    <img src="images/teams/EAGLES IMAGE.png" />
-                    </div>
-                    <div class="eagles">
-                    <img src="images/teams/eagles-squad.jpg" />
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">
-                                               <div>
-                                                <h4>Eagles Fixtures</h4>
-                                                <h4>January 2018</h4>
-                                                <p>14th - Murrayfield    - Home - Challenge - 21-0</p>
-                                                <p>27th - Solway         - Home - League - 8-5</p>
-                                                <h4>February 2018</h4>
-                                                <p>10th - Lanarksire     - Away - Challenge - 5:45PM</p>
-                                                <p>18th - Ayr Bruins     - Home - Challenge  - 5:30PM</p>
-                                                <p>25th -  North Ayrshire - Home - Challenge - 7:00PM</p>
-                                                <h4>March 2018</h4>
-                                                <p>10th - TBC            - Home - League - 6:30PM</p>
-                                                <p>18th - TBC            - Home - Challenge - 5:30PM</p>
-                                                <p>25th - TBC            - Home - Challenge - 5:30PM</p>
-                                                <h4>April 2018</h4>
-                                                <p>21st - SCOT CUP FINALS</p>
-                                                <h4>May 2018</h4>
-                                                <p>5th - HOCKEY UK</p>
-                                                <p>6th - HOCKEY UK</p>
-                                                <p>7th - HOCKEY UK</p>
-                                            </div>
-                </div>
-            </div>
-            <div id="redskins" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                    <div class="redskins">
-                    <img src="images/teams/REDSKINS IMAGE.png" />
-                    <div>
-                        <p>HONOURS</p>
-		                <p>SCOTTISH LEAGUE WINNERS</p>
-		                <p>2015/16, 2014/15, 2012/13, 2011/12, 2010/11, 2006/07, 2005/06, 2003/04</p>
-		                <p>SCOTTISH CUP WINNERS</p>
-		                <p>2016/17, 2015/16, 2014/15, 2013/14, 2012/13, 2011/12, 2010/11, 2008/09, 2006/07, 2003/04, 2002/03</p>
+            <div id="eagles" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="eagles">
+                            <img src="images/teams/EAGLES IMAGE.png" />
+                            <img class="team-image" src="images/teams/eagles-squad.jpg" />
+                            </div>
+                            <div class="fixtures">
+                             <h4>Eagles Fixtures</h4>
+                             <h4>January 2018</h4>
+                             <p>14th - Murrayfield    - Home - Challenge - 21-0</p>
+                             <p>27th - Solway         - Home - League - 8-5</p>
+                             <h4>February 2018</h4>
+                             <p>10th - Lanarksire     - Away - Challenge - 5:45PM</p>
+                             <p>18th - Ayr Bruins     - Home - Challenge  - 5:30PM</p>
+                             <p>25th -  North Ayrshire - Home - Challenge - 7:00PM</p>
+                             <h4>March 2018</h4>
+                             <p>10th - TBC            - Home - League - 6:30PM</p>
+                             <p>18th - TBC            - Home - Challenge - 5:30PM</p>
+                             <p>25th - TBC            - Home - Challenge - 5:30PM</p>
+                             <h4>April 2018</h4>
+                             <p>21st - SCOT CUP FINALS</p>
+                             <h4>May 2018</h4>
+                             <p>5th - HOCKEY UK</p>
+                             <p>6th - HOCKEY UK</p>
+                             <p>7th - HOCKEY UK</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+              </div>
             </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">
-                    <div>
-                                                <h4>Redskins Fixtures</h4>
-                                                <h4>January 2018</h4>
-                                                <p>6th - Aberdeen/Inver  - Away - League - 27-2</p>
-                                                <p>13th - ELgin          - Away - League - 45-0</p>
-                                                <p>21st - Lanarkshire    - Away - League - 13-2</p>
-                                                <h4>February 2018</h4>
-                                                <p>3rd - Elgin           - Home - League - 12:15PM</p>
-                                                <p>4th - Dundee Stars    - Away - SCR2 - 2:30PM</p>
-                                                <p>10th - Belfast        - Away - League - 4:00PM</p>
-                                                <p>17th - North Ayrshire - Away - League - 2:30PM</p>
-                                                <h4>March 2018</h4>
-                                                <p>4th  - Solway         - Away - League - 5:30PM</p>
-                                                <p>10th - Kilmarnock     - Away - League - 5:00PM</p>
-                                                <p>17th - Lanarkshire    - Home - League - 6:30PM</p>
-                                                <p>24th - Murrayfield    - Away - League - 12:15PM</p>
-                                                <h4>April 2018</h4>
-                                                <p>7th - Belfast        - Home - League - 6:30PM</p>
-                                                <p>14th - Elgin          - Home - League - 5:30PM</p>
-                                                <p>21st - SCOT CUP FINALS</p>
-                                                <h4>May 2018</h4>
-                                                <p>5th - HOCKEY UK</p>
-                                                <p>6th - HOCKEY UK</p>
-                                                <p>7th - HOCKEY UK</p>
-                                            </div>
+            <div id="redskins" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="redskins">
+                                <img src="images/teams/REDSKINS IMAGE.png" />
+                                <img class="team-image" src="images/teams/redskins-squad.jpg" />
+                                <div>
+                                    <p>HONOURS</p>
+            		                <p>SCOTTISH LEAGUE WINNERS</p>
+            		                <p>2015/16, 2014/15, 2012/13, 2011/12, 2010/11, 2006/07, 2005/06, 2003/04</p>
+            		                <p>SCOTTISH CUP WINNERS</p>
+            		                <p>2016/17, 2015/16, 2014/15, 2013/14, 2012/13, 2011/12, 2010/11, 2008/09, 2006/07, 2003/04, 2002/03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fixtures">
+                            <div>
+                                <h4>Redskins Fixtures</h4>
+                                <h4>January 2018</h4>
+                                <p>6th - Aberdeen/Inver  - Away - League - 27-2</p>
+                                <p>13th - ELgin          - Away - League - 45-0</p>
+                                <p>21st - Lanarkshire    - Away - League - 13-2</p>
+                                <h4>February 2018</h4>
+                                <p>3rd - Elgin           - Home - League - 12:15PM</p>
+                                <p>4th - Dundee Stars    - Away - SCR2 - 2:30PM</p>
+                                <p>10th - Belfast        - Away - League - 4:00PM</p>
+                                <p>17th - North Ayrshire - Away - League - 2:30PM</p>
+                                <h4>March 2018</h4>
+                                <p>4th  - Solway         - Away - League - 5:30PM</p>
+                                <p>10th - Kilmarnock     - Away - League - 5:00PM</p>
+                                <p>17th - Lanarkshire    - Home - League - 6:30PM</p>
+                                <p>24th - Murrayfield    - Away - League - 12:15PM</p>
+                                <h4>April 2018</h4>
+                                <p>7th - Belfast        - Home - League - 6:30PM</p>
+                                <p>14th - Elgin          - Home - League - 5:30PM</p>
+                                <p>21st - SCOT CUP FINALS</p>
+                                <h4>May 2018</h4>
+                                <p>5th - HOCKEY UK</p>
+                                <p>6th - HOCKEY UK</p>
+                                <p>7th - HOCKEY UK</p>
+                            </div>
                 </div>
-            </div>
-            <div id="chiefs" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                <div class="chiefs">
-                    <img src="images/teams/CHIEFS LOGO.png" />
-                    <div>
-                        <p>HONOURS</p>
-		                <p>SCOTTISH LEAGUE WINNERS</p>
-		                <p>2015/16, 2014/15, 2012/13, 2009/10, 2008/09, 2007/08, 2006/07, 2005/06</p>
-		                <p>SCOTTISH CUP WINNERS</p>
-		                <p>2015/16, 2014/15, 2013/14, 2009/10, 2008/09, 2007/08, 2005/06</p>
                     </div>
                 </div>
-
+               </div>
             </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">                                            
-                    <div>
-                                                <h4>Chiefs Fixtures</h4>
-                                                <h4>January 2018</h4>
-                                                <p>7th -  Kilmarnock      - Home - League/SCR2 - 6-4</p>
-                                                <p>13th - Elgin          - Away - League - 13-0</p>
-                                                <p>20th - Belfast        - Away - League - 2-7</p>
-                                                <h4>February 2018</h4>
-                                                <p>3rd - Belfast         - Home - League - 6:30PM</p>
-                                                <h4>March 2018</h4>
-                                                <p>10th - Kilmarnock     - Away - League - 3:30PM</p>
-                                                <p>17th - Lanarkshire    - Home - League - 8:00PM</p>
-                                                <p>24th - Aberdeen/Inver - Home - League - 6:30PM</p>
-                                                <p>31st - Ayr Bruins     - Away - League  - 3:15PM </p>
-                                                <h4>April 2018</h4>
-                                                <p>14th - Elgin          - Home - League - 7:00PM</p>
-                                                <p>21st - SCOT CUP FINALS</p>
-                                                <h4>May 2018</h4>
-                                                <p>5th - HOCKEY UK</p>
-                                                <p>6th - HOCKEY UK</p>
-                                                <p>7th - HOCKEY UK</p>
-                                            </div>
-</div>
-            </div>
-            <div id="flames" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                <div class="flames">
-                    <img src="images/teams/FLAMES IMAGE.png" />
-                    <div>
-                        <p>HONOURS</p>
-		                <p>SCOTTISH LEAGUE WINNERS</p>
-		                <p>2016/17, 2015/16, 2014/15, 2009/10, 2008/09, 2007/08, 2006/07</p>
-		                <p>SCOTTISH CUP WINNERS</p>
-		                <p>2016/17, 2015/16, 2014/15, 2011/12, 2009/10, 2008/09, 2006/07</p>
-	                </div>
+            <div id="chiefs" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="chiefs">
+                                <img src="images/teams/CHIEFS LOGO.png" />
+                                <img class="team-image" src="images/teams/chiefs-squad.jpg" />
+                                <div>
+                                    <p>HONOURS</p>
+            		                <p>SCOTTISH LEAGUE WINNERS</p>
+            		                <p>2015/16, 2014/15, 2012/13, 2009/10, 2008/09, 2007/08, 2006/07, 2005/06</p>
+            		                <p>SCOTTISH CUP WINNERS</p>
+            		                <p>2015/16, 2014/15, 2013/14, 2009/10, 2008/09, 2007/08, 2005/06</p>
+                                </div>
                 </div>
 
             </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">
-                    <div>
-                                                <h4>Flames Fixtures</h4>
-                                                <h4>January 2018</h4>
-                                                <p>7th - Kilmarnock      - Home - League/SCR2 - 9-1</p>
-                                                <p>13th - Dundee Stars   - Away - League - 6-2</p>
-                                                <p>20th - Belfast        - Away - League - 9-2</p>
-                                                <h4>February 2018</h4>
-                                                <p>3rd - Belfast         - Home - League - 8:00PM</p>
-                                                <p>11th - Solway         - Home - League - 5:30PM</p>
-                                                <h4>March 2018</h4>
-                                                <p>11th - Kilmarnock     - Home - League - 5:30PM</p>
-                                                <p>18th - Solway         - Away - League/SC - 10:00AM</p>
-                                                <p>24th - Aberdeen/Inver - Home - League - 8:00PM</p>
-                                                <p>31st - Ayr Bruins     - Away - League  - 5:00PM </p>
-                                                <h4>April 2018</h4>
-                                                <p>21st - SCOT CUP FINALS</p>
-                                                <h4>May 2018</h4>
-                                                <p>5th - HOCKEY UK</p>
-                                                <p>6th - HOCKEY UK</p>
-                                                <p>7th - HOCKEY UK</p>
-                                            </div>
+                        <div class="fixtures">                                            
+                            <div>
+                                <h4>Chiefs Fixtures</h4>
+                                <h4>January 2018</h4>
+                                <p>7th -  Kilmarnock      - Home - League/SCR2 - 6-4</p>
+                                <p>13th - Elgin          - Away - League - 13-0</p>
+                                <p>20th - Belfast        - Away - League - 2-7</p>
+                                <h4>February 2018</h4>
+                                <p>3rd - Belfast         - Home - League - 6:30PM</p>
+                                <h4>March 2018</h4>
+                                <p>10th - Kilmarnock     - Away - League - 3:30PM</p>
+                                <p>17th - Lanarkshire    - Home - League - 8:00PM</p>
+                                <p>24th - Aberdeen/Inver - Home - League - 6:30PM</p>
+                                <p>31st - Ayr Bruins     - Away - League  - 3:15PM </p>
+                                <h4>April 2018</h4>
+                                <p>14th - Elgin          - Home - League - 7:00PM</p>
+                                <p>21st - SCOT CUP FINALS</p>
+                                <h4>May 2018</h4>
+                                <p>5th - HOCKEY UK</p>
+                                <p>6th - HOCKEY UK</p>
+                                <p>7th - HOCKEY UK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>    
+            </div>
+            <div id="flames" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="flames">
+                            <img src="images/teams/FLAMES IMAGE.png" />
+                            <img class="team-image" src="images/teams/flames-squad.jpg" />
+                            <div>
+                                <p>HONOURS</p>
+		                        <p>SCOTTISH LEAGUE WINNERS</p>
+		                        <p>2016/17, 2015/16, 2014/15, 2009/10, 2008/09, 2007/08, 2006/07</p>
+		                        <p>SCOTTISH CUP WINNERS</p>
+		                        <p>2016/17, 2015/16, 2014/15, 2011/12, 2009/10, 2008/09, 2006/07</p>
+	                        </div>
+                        </div>
+
+            </div>
+                        <div class="fixtures">
+                            <div>
+                                <h4>Flames Fixtures</h4>
+                                <h4>January 2018</h4>
+                                <p>7th - Kilmarnock      - Home - League/SCR2 - 9-1</p>
+                                <p>13th - Dundee Stars   - Away - League - 6-2</p>
+                                <p>20th - Belfast        - Away - League - 9-2</p>
+                                <h4>February 2018</h4>
+                                <p>3rd - Belfast         - Home - League - 8:00PM</p>
+                                <p>11th - Solway         - Home - League - 5:30PM</p>
+                                <h4>March 2018</h4>
+                                <p>11th - Kilmarnock     - Home - League - 5:30PM</p>
+                                <p>18th - Solway         - Away - League/SC - 10:00AM</p>
+                                <p>24th - Aberdeen/Inver - Home - League - 8:00PM</p>
+                                <p>31st - Ayr Bruins     - Away - League  - 5:00PM </p>
+                                <h4>April 2018</h4>
+                                <p>21st - SCOT CUP FINALS</p>
+                                <h4>May 2018</h4>
+                                <p>5th - HOCKEY UK</p>
+                                <p>6th - HOCKEY UK</p>
+                                <p>7th - HOCKEY UK</p>
+                            </div>
 
                 </div>
+                    </div>
+                </div>
+               </div>    
             </div>
-            <div id="falcons" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                <div class="falcons">
-                    <img src="images/teams/FALCONS IMAGE.png" />
-                     <div>
-                        <p>HONOURS</p>
-                        <p>BRITISH CHAMPIONS</p>
-	                    <p>2016/17</p>
-	                    <p>SCOTTISH LEAGUE WINNERS</p>
-	                    <p>2016/17, 2015/16, 2014/15, 2013/14, 2009/10, 2002/03</p>
-	                    <p>SCOTTISH CUP WINNERS</p>
-	                    <p>2016/17, 2015/16, 2014/15, 2012/13, 2010/11</p>
-		             </div>
+            <div id="falcons" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="falcons">
+                            <img src="images/teams/FALCONS IMAGE.png" />
+                            <img class="team-image" src="images/teams/falcons-squad.jpg" />
+                             <div>
+                                <p>HONOURS</p>
+                                <p>BRITISH CHAMPIONS</p>
+        	                    <p>2016/17</p>
+        	                    <p>SCOTTISH LEAGUE WINNERS</p>
+        	                    <p>2016/17, 2015/16, 2014/15, 2013/14, 2009/10, 2002/03</p>
+        	                    <p>SCOTTISH CUP WINNERS</p>
+        	                    <p>2016/17, 2015/16, 2014/15, 2012/13, 2010/11</p>
+		                     </div>
+                            </div>
+                        </div>
+                        <div class="fixtures">
+                            <div>
+                                <h4>Falcons Fixtures</h4>
+                                <h4>January 2018</h4>
+                                <p>6th - Aberdeen/Inver  - Away - League - 10-2</p>
+                                <p>13th - Kilmarnock     - Away - League - 9-4</p>
+                                <h4>February 2018</h4>
+                                <p>10th - Belfast        - Away - League - 5:30PM</p>
+                                <h4>March 2018</h4>
+                                <p>3rd  - Solway         - Away - League - 3:45PM</p>
+                                <p>4th  - Solway         - Home - League - 11:15AM</p>
+                                <p>11th - Kilmarnock     - Home - League - 7:00PM</p>
+                                <h4>April 2018</h4>
+                                <p>11th - Kilmarnock     - Home - League - 7:00PM</p>
+                                <p>21st - SCOT CUP FINALS</p>
+                                <h4>May 2018</h4>
+                                <p>5th - HOCKEY UK</p>
+                                <p>6th - HOCKEY UK</p>
+                                <p>7th - HOCKEY UK</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+               </div>    
             </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">
-                    <div>
-                                                <h4>Falcons Fixtures</h4>
-                                                <h4>January 2018</h4>
-                                                <p>6th - Aberdeen/Inver  - Away - League - 10-2</p>
-                                                <p>13th - Kilmarnock     - Away - League - 9-4</p>
-                                                <h4>February 2018</h4>
-                                                <p>10th - Belfast        - Away - League - 5:30PM</p>
-                                                <h4>March 2018</h4>
-                                                <p>3rd  - Solway         - Away - League - 3:45PM</p>
-                                                <p>4th  - Solway         - Home - League - 11:15AM</p>
-                                                <p>11th - Kilmarnock     - Home - League - 7:00PM</p>
-                                                <h4>April 2018</h4>
-                                                <p>11th - Kilmarnock     - Home - League - 7:00PM</p>
-                                                <p>21st - SCOT CUP FINALS</p>
-                                                <h4>May 2018</h4>
-                                                <p>5th - HOCKEY UK</p>
-                                                <p>6th - HOCKEY UK</p>
-                                                <p>7th - HOCKEY UK</p>
-                                            </div>
-
-                </div>
-            </div>
-            <div id="kestrels" class="row heading">
-                <div class="col-xs-12 col-sm-12 col-md-6 teams">
-                    <div class="kestrels">
-                    <img src="images/teams/KESTRELS LOGO.png" />
-                    <div>
-		                    <p>Kirkcaldy Kestrels - Scottish National League</p>
-		                    <p>HONOURS</p>
-		                    <p>SCOTTISH LEAGUE WINNERS</p>
-		                    <p>2015/16, 2014/15, 2009/10</p>
-		                    <p>SCOTTISH PLAYOFF WINNERS</p>
-		                    <p>2014/15, 2009/10</p>
-		                </div>
-                </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 fixtures">
-                    <div>
+            <div id="kestrels" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row heading">
+                        <div class="col-xs-12 col-sm-12 col-md-12 teams">
+                            <div class="kestrels">
+                            <img src="images/teams/KESTRELS LOGO.png" />
+                            <img class="team-image" src="images/teams/kestrels-squad.jpg" />
+                                <div>
+		                            <p>Kirkcaldy Kestrels - Scottish National League</p>
+		                            <p>HONOURS</p>
+        		                    <p>SCOTTISH LEAGUE WINNERS</p>
+        		                    <p>2015/16, 2014/15, 2009/10</p>
+        		                    <p>SCOTTISH PLAYOFF WINNERS</p>
+        		                    <p>2014/15, 2009/10</p>
+		                        </div>
+                            </div>
+                        </div>
+                        <div class="fixtures">
+                          <div>
                             <h4>Kestrels Fixtures</h4>
                             <h4>January 2018</h4>
                             <p>14th - Edinburgh      - Home - League - 8-10</p>
@@ -355,16 +390,20 @@
                             <p>5th - HOCKEY UK</p>
                             <p>6th - HOCKEY UK</p>
                         </div>
+                        </div>
+                    </div>
                 </div>
+               </div>
             </div>
-            <div class="return teams"><a href="#Teams">Back to Teams</a></div>
         </div>
-        
     </div>
-    <div id="Game-Action" class="container-fluid">
-        <div class="row game-action heading">
-            <h2 class="area">Game Action</h2>
-                <div class="col-xs-12 col-sm-6 col-md-6 game-box">
+    <div id="Game-Action" class="container-fluid page-section">
+        <div class="row heading game-heading area">
+            <h2>Game Action</h2>
+        </div>
+        <div class="row">
+            <div class="game-action">
+                <div class="col-xs-12 col-sm-6 col-md-4 game-box">
                     <div class="game">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M5gAB92By0o" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                     </div>
@@ -372,17 +411,15 @@
                         <p>Dundee Comets v Kirkcaldy Kestrels</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 game-box">
-                    <div class="box-shadow">
+                <div class="col-xs-12 col-sm-6 col-md-4 game-box">
                     <div class="game">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c70yJj-liU8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c70yJj-liU8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="game-info">
                         <p>Kirkcaldy Kestrels v Aberdeen Lynx</p>
                     </div>
-                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12  game-box">
+                <div class="col-xs-12 col-sm-6 col-md-4  game-box">
                     <div class="game">   
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-p6niCjZ5yg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                     </div>
@@ -390,9 +427,10 @@
                         <p>Kirkcaldy Kestrels v Kilmarnock Storm</p>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-    <div id="Whoswho" class="container-fluid">
+    <div id="Whoswho" class="container-fluid page-section">
          <div class="row heading committee">
              <h2 class="area">Who's Who</h2>
              <div class="col-xs-12 col-sm-6 col-md-4">
@@ -401,52 +439,48 @@
              <div class="col-xs-12 col-sm-6 col-md-4">
                  <h4>Vice Chairman - Andy Samuel</h4><a href="mailto:vicechairman@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a>
              </div>
-             <div class="col-xs-12 col-sm-12 col-md-4">
+             <div class="col-xs-12 col-sm-6 col-md-4">
                  <h4>Head Coach - Steven Lynch</h4><a href="mailto:headcoach@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a>
              </div>
-        </div>
-        <div class="row heading committee">
              <div class="col-xs-12 col-sm-6 col-md-4">
                  <h4>Club Secretary - Neil Saunders</h4><a href="mailto:secretary@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a>
              </div>
              <div class="col-xs-12 col-sm-6 col-md-4">
                  <h4>Fixtures Secretary - Barry Grieg</h4><a href="mailto:fixture-secretary@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a>
              </div>
-             <div class="col-xs-12 col-sm-12 col-md-4">
+             <div class="col-xs-12 col-sm-6 col-md-4">
                  <h4>Child Protection Officer - Rhonda Annan</h4><a href="mailto:cpo@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a>
              </div>
         </div>
     </div>
-    <div id="Sponsors" class="container-fluid">
+    <div id="Sponsors" class="container-fluid page-section">
         <div class="row heading sponsors">
             <h2 class="area">Commercial Partners</h2>
             <div class="col-xs-6 col-sm-6 col-md-3">
-                <a target="_blank" href="https://www.farmerautocare.com/" class="sponsors"><img src="images/sponsors/farmers logo.png" /></a><p>Farmer Autocare</p>
+                <a target="_blank" href="https://www.farmerautocare.com/" class="sponsors"><img class="sponsors-image" src="images/sponsors/farmers logo.png" /></a><p>Farmer Autocare</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-                <a target="_blank" href="https://www.glovesoffclothing.com/" class="sponsors"><img src="images/sponsors/gloves-off.png" /></a><p>Gloves Off Hockey</p>
+                <a target="_blank" href="https://www.glovesoffclothing.com/" class="sponsors"><img class="sponsors-image" src="images/sponsors/gloves-off.png" /></a><p>Gloves Off Hockey</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-                <a target="_blank" href="https://www.acasports.co.uk/" class="sponsors"><img src="images/sponsors/aca-sports.gif" /></a><p>ACA Sports</p>
+                <a target="_blank" href="https://www.acasports.co.uk/" class="sponsors"><img class="sponsors-image" src="images/sponsors/aca-sports.gif" /></a><p>ACA Sports</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-                <a target="_blank" href="https://www.tsb.co.uk/personal/" class="sponsors"><img src="images/sponsors/tsb_logo.png" /></a><p>Trustees Savings Bank</p>
-            </div>
-        </div>
-        <div class="row heading sponsors">
-            <div class="col-xs-6 col-sm-6 col-md-3">
-                <a target="_blank" href="https://www.thebuffalofarm.co.uk/" class="sponsors"><img src="images/sponsors/buffalo-farm.png" /></a><p>The Buffalo Farm</p>
+                <a target="_blank" href="https://www.tsb.co.uk/personal/" class="sponsors"><img class="sponsors-image" src="images/sponsors/tsb_logo.png" /></a><p>Trustees Savings Bank</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-                <a target="_blank" href="https://www.mkmbs.co.uk/" class="sponsors"><img src="images/sponsors/MKMsitelogo.png" /></a><p>MKM Building Supplies</p>
+                <a target="_blank" href="https://www.thebuffalofarm.co.uk/" class="sponsors"><img class="sponsors-image" src="images/sponsors/buffalo-farm.png" /></a><p>The Buffalo Farm</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-3">
-                <a target="_blank" href="http://www.key-tech.co.uk/" class="sponsors"><img src="images/sponsors/keytech.png" /></a><p>Key Tech</p>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <a target="_blank" href="https://www.mkmbs.co.uk/" class="sponsors"><img class="sponsors-image" src="images/sponsors/MKMsitelogo.png" /></a><p>MKM Building Supplies</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <a target="_blank" href="http://www.key-tech.co.uk/" class="sponsors"><img class="sponsors-image" src="images/sponsors/keytech.png" /></a><p>Key Tech</p>
             </div>
         </div>
     </div>
 </section>
-<footer class="container-fluid">
+<footer class="container-fluid page-section">
         <div id="Links" class="row footer-section">
                 <div class="col-xs-12 col-sm-12 col-md-12 download">
                     <h4 class="download-heading">Download</h4>

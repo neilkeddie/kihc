@@ -2,7 +2,7 @@
 
 /*------------------------Body---*/
 
-.container-fluid {
+.page-section {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
@@ -42,9 +42,11 @@ body {
 }
 
 .navbar-header{
-  height: 80px;
+  height: auto;
 }
-
+.navbar-brand {
+  padding: 1px 15px;
+}
 .navbar-brand p {
   color: rgba(20,50,106, 1);
 }
@@ -57,6 +59,9 @@ body {
 
 .navbar-default .links {
   padding-right: 0;
+}
+.navbar {
+  margin-bottom: 0;
 }
 .nav>li>a {
   padding: 5px 8px;
@@ -77,36 +82,7 @@ body {
   font-size: 15px;
   background-color: #fafafa;
   position: relative;
-}
-
-.heading .area {
-  padding-top: 20px;
   padding-bottom: 10px;
-}
-
-.tagline {
-  font-size: 45px;
-  font-weight: 400;
-  margin-right: -180px;
-  margin-top: 100px;
-}
-
-.tagline p {
-  margin-right: -240px;
-}
-
-.sub-tag {
-  font-size: 35px;
-  font-weight: 300;
-  width: 400px;
-  margin-top: 45px;
-}
-
-.tagline, .sub-tag{
-  font-family: "Work Sans", sans-serif;
-  color: #000066;
-  position: relative;
-  z-index: 100;
 }
 
 
@@ -119,7 +95,7 @@ body {
   width: 100%;
 }
 
-.carousel-inner .item {
+.item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;  
@@ -127,37 +103,37 @@ body {
 }
 
 .image1 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%), url('../images/Flames.png');
+  background-image: url('../images/Flames.png');
 }
 .image2 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Falcons.png');
+  background-image: url('../images/Falcons.png');
 }
 .image3 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%), url('../images/Redskins.png');
+  background-image: url('../images/Redskins.png');
 }
 .image4 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Chiefs.png');
+  background-image: url('../images/Chiefs.png');
 }
 .image5 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Kubz.png');
+  background-image: url('../images/Kubz.png');
 }
 .image6 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Eagles.png');
+  background-image: url('../images/Eagles.png');
 }
 .image7 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Kestrels.png');
+  background-image: url('../images/Kestrels.png');
 }
 .image8 {
-  background-image: linear-gradient(to left, rgba(254,255,255,0) 32%,rgba(210,235,249,1) 100%),  url('../images/Puck.png');
+  background-image: url('../images/Puck.png');
 }
 
-.home .carousel-indicators li{
+.carousel-indicators-list{
   background-color: rgba(20,50,106, 1);
 }
 
 /*----------------------------------------Sponsors---*/
 
-.sponsors img {
+.sponsors-image {
   height: 50px;
   width: 66px;
 }
@@ -169,42 +145,23 @@ body {
 
 /*-----------------------------------Teams-----*/
 
-.team-heading .area {
+.team-heading {
   background-color: #14326a;
   color: #fff;
 }
 
-.area {
-  margin-top: 0;
+.team-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.teams a {
+.team-anchor {
   text-decoration: none;
 }
 
-.team-info {
-  min-height: 400px;
-}
-.eagles img{
+.team-image{
   padding-top: 20px;
   width: 100%;
-}
-
-#kubz, #eagles, #redskins, #chiefs, #flames, #falcons, #kestrels {
-  display: none;
-}
-
-#kubz:target, #eagles:target, #redskins:target, #chiefs:target, #flames:target, #falcons:target, #kestrels:target  {
-  display: inline;
-}
-
-.return {
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #14326a;
-  text-decoration: none;
 }
 
 /*-----------------------------------------Whos Who---*/
@@ -222,22 +179,22 @@ body {
 /*-----------------------------------------Game Action---*/
 
 .game-action  {
-  background-color: #14326a;
+  background-color: #fafafa;
   color: #fff;
   padding-top: 10px;
   text-align: center;
 }
 
 .game-box {
-  padding: 10px 10px;
+  padding: 30px 30px;
   background-color: #fafafa;
   color: #14326a;
-  -moz-box-shadow: 0 0 5px #000033;
-  -webkit-box-shadow: 0 0 5px #000033;
-  box-shadow: 0 0 5px #000033;
-    
 }
 
+.game-heading {
+  background-color: #14326a;
+  color: #fafafa;
+}
 .game{
   display: inline-block;
 }
@@ -272,4 +229,17 @@ body {
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+}
+
+
+
+/*-------------------Media Queries---*/
+
+@media only screen and (max-width: 767px) {
+    .carousel-inner {
+        height: 300px;
+    }
+    .team-logo {
+      width: 50%;
+    }
 }
