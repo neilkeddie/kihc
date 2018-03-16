@@ -23,9 +23,6 @@ body {
 
 .navbar-default .navbar-nav>li>a  {
   color: rgba(20,50,106, 1);
-}
-
-.navbar-default .navbar-nav>li>a {
   border: none;
 }
 
@@ -47,15 +44,6 @@ body {
 .navbar-brand {
   padding: 1px 15px;
 }
-.navbar-brand p {
-  color: rgba(20,50,106, 1);
-}
-
-.navbar-brand p:after {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: -35px;
-}
 
 .navbar-default .links {
   padding-right: 0;
@@ -63,7 +51,7 @@ body {
 .navbar {
   margin-bottom: 0;
 }
-.nav>li>a {
+.nav-anchor {
   padding: 5px 8px;
 }
 
@@ -133,16 +121,42 @@ body {
 
 /*----------------------------------------Sponsors---*/
 
-.sponsors-image {
-  height: 50px;
-  width: 66px;
+.sponsor-image1 {
+  background-image: url('../images/sponsors/tsb_logo.png');
+}
+.sponsor-image2 {
+  background-image: url('../images/sponsors/gloves-off.png');
+}
+.sponsor-image3 {
+  background-image: url('../images/sponsors/farmers logo.png');
+}
+.sponsor-image4 {
+  background-image: url('../images/sponsors/aca-sports.gif');
+}
+.sponsor-image5 {
+  background-image: url('../images/sponsors/buffalo-farm.png');
+}
+.sponsor-image6 {
+  background-image: url('../images/sponsors/MKMsitelogo.png');
+}
+.sponsor-image7 {
+  background-image: url('../images/sponsors/keytech.png');
 }
 
-.sponsors {
+.sponsor {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  height: 60px;
+}
+
+.sponsor-anchor {
+  text-decoration: none;
   padding-bottom: 20px;
 }
-
-
+.sponsor-anchor:hover {
+  text-decoration: none;
+}
 /*-----------------------------------Teams-----*/
 
 .team-heading {
@@ -172,7 +186,7 @@ body {
   padding-bottom: 30px;
 }
 
-.committee a i {
+.committee-icon {
     color: #fafafa;
 }
 
@@ -212,10 +226,10 @@ body {
   color: #fff;
   border-top: 0.5px solid;
 }
-.download a i {
+.download-icon {
   color: #fff;
 }
-.social-links li a i {
+.social-icons {
   height: 32px;
   width: 32px;
   padding: 12px 0;
