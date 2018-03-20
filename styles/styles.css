@@ -54,7 +54,9 @@ body {
 .nav-anchor {
   padding: 5px 8px;
 }
-
+.navbar-toggle {
+  margin-right: 25px;
+}
 .home {
   position: relative;
 }
@@ -157,6 +159,9 @@ body {
 .sponsor-anchor:hover {
   text-decoration: none;
 }
+.sponsor-paragraph {
+  padding-bottom: 20px;
+}
 /*-----------------------------------Teams-----*/
 
 .team-heading {
@@ -184,10 +189,13 @@ body {
   width: 100%;
 }
 
-.team-logo {
-  
+.team-anchor img:focus {
+  outline: none;
 }
 
+.team-anchor:focus {
+  outline: none;
+}
 /*-----------------------------------------Whos Who---*/
 
 .committee {
@@ -198,6 +206,10 @@ body {
 
 .committee-icon {
     color: #fafafa;
+}
+
+.committee-heading {
+  font-size: 14px;
 }
 
 /*-----------------------------------------Game Action---*/
@@ -266,4 +278,11 @@ body {
     .team-logo {
       width: 50%;
     }
+}
+
+@media only screen and (max-width: 480px) {
+  .team-logo {
+    width: 100%;
+  }
+
 }
